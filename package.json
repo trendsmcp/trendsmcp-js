@@ -1,0 +1,54 @@
+{
+  "name": "trendsmcp",
+  "version": "1.0.0",
+  "description": "Keyword trend data and growth rates via REST. Google Trends, Google Search, YouTube, Reddit, Amazon, TikTok, Wikipedia, npm, and more. Typed JS/TS client for the Trends MCP API.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "google-trends",
+    "trends-api",
+    "keyword-research",
+    "search-volume",
+    "seo",
+    "reddit-api",
+    "youtube-api",
+    "amazon-api",
+    "tiktok-api",
+    "wikipedia-api",
+    "npm-downloads",
+    "trend-data",
+    "growth-rate",
+    "market-research",
+    "analytics"
+  ],
+  "author": "Trends MCP",
+  "license": "MIT",
+  "homepage": "https://trendsmcp.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trendsmcp/trendsmcp-js"
+  },
+  "bugs": {
+    "url": "https://github.com/trendsmcp/trendsmcp-js/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
